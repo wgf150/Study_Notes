@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1b47253dfae9087d",
+        "id": "c2d2dfa7b29db856",
         "type": "tabs",
         "children": [
           {
-            "id": "60615377c28f3ee7",
+            "id": "8ab121e73d20df56",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "pictures/项目笔记/J6模型转换_5.png"
+                "file": "doc/简历分析.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "J6模型转换_5"
+              "icon": "lucide-file",
+              "title": "简历分析"
             }
           }
         ]
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pictures/项目笔记/J6模型转换_5.png",
+                "file": "doc/简历分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "J6模型转换_5 的大纲"
+              "title": "简历分析 的大纲"
             }
           }
         ],
@@ -166,12 +168,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "60615377c28f3ee7",
+  "active": "8ab121e73d20df56",
   "lastOpenFiles": [
+    "doc/调试笔记.md",
+    "pictures/项目笔记/J6模型转换_5.png",
     "docs/C++.md",
     "doc/项目笔记.md",
     "doc/面试准备.md",
-    "doc/调试笔记.md",
     "doc/简历分析.md",
     "doc/神经网络和深度学习.md",
     "doc/知识提纲.md",
@@ -191,7 +194,6 @@
     "docs/python.md",
     "pictures/调试笔记/fd泄露_3.jpg",
     "pictures/项目笔记/J6模型转换_6.png",
-    "pictures/项目笔记/J6模型转换_5.png",
     "docs/Leetcode.md",
     "pictures/项目笔记/J6模型转换_4.png",
     "pictures/项目笔记/J6模型转换_3.png",
@@ -206,7 +208,6 @@
     "pictures/知识提纲",
     "docs/gptp笔记.md",
     "Markdown使用.md",
-    "docs/linuxptp - ptp4l.md",
     "pictures/调试笔记/linux工具_4.PNG.crdownload",
     "pictures/调试笔记/linux工具_3.PNG.crdownload",
     "pictures/调试笔记/linux工具_2.PNG.crdownload",
