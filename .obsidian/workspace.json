@@ -1,0 +1,301 @@
+{
+  "main": {
+    "id": "22aac31c2eb9c9e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b47253dfae9087d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16e3eebb40a8b1e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/简历分析.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "简历分析"
+            }
+          },
+          {
+            "id": "60615377c28f3ee7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/项目笔记.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目笔记"
+            }
+          },
+          {
+            "id": "eb67e11daeb3b8d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python"
+            }
+          },
+          {
+            "id": "022d583157dbe3e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Leetcode.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Leetcode"
+            }
+          },
+          {
+            "id": "4161dcb7536ccd06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/C++.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C++"
+            }
+          },
+          {
+            "id": "1619e8dfa8a8a3b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/面试准备.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "面试准备"
+            }
+          },
+          {
+            "id": "00d608059572cebb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/调试笔记.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "调试笔记"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e8defcd5390e9b29",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f1f175a138cea4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b62a3aacbcafa8bb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "64d6acedab209841",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "f0ea50d299c80157",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 224.5
+  },
+  "right": {
+    "id": "c732a7157e6b3b87",
+    "type": "split",
+    "children": [
+      {
+        "id": "12e96a9d43d852ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8dab6895b0459f42",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/C++.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "C++ 的反向链接列表"
+            }
+          },
+          {
+            "id": "ee3764dc4329159b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/C++.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "C++ 的出链列表"
+            }
+          },
+          {
+            "id": "94b3e49409b9f705",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ee924ff648a72340",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/C++.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "C++ 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "4161dcb7536ccd06",
+  "lastOpenFiles": [
+    "docs/简历分析.md",
+    "docs/C++.md",
+    "Pasted image 20250327155109.png",
+    "Pasted image 20250327155050.png",
+    "docs/项目笔记.md",
+    "docs/调试笔记.md",
+    "docs/面试准备.md",
+    "docs/python.md",
+    "pictures/调试笔记/fd泄露_3.jpg",
+    "pictures/项目笔记/J6模型转换_6.png",
+    "pictures/项目笔记/J6模型转换_5.png",
+    "docs/Leetcode.md",
+    "pictures/项目笔记/J6模型转换_4.png",
+    "pictures/项目笔记/J6模型转换_3.png",
+    "personal",
+    "docs/未命名.md",
+    "pictures/项目笔记/J6模型转换_2.png",
+    "Pasted image 20250310085132.png",
+    "docs/知识提纲.md",
+    "Java Algorithm Handbook-The Fifth Edition.md",
+    "docs/神经网络和深度学习.md",
+    "pictures/调试笔记/vcast_5.png",
+    "pictures/知识提纲",
+    "docs/gptp笔记.md",
+    "Markdown使用.md",
+    "docs/linuxptp - ptp4l.md",
+    "pictures/调试笔记/linux工具_4.PNG.crdownload",
+    "pictures/调试笔记/linux工具_3.PNG.crdownload",
+    "pictures/调试笔记/linux工具_2.PNG.crdownload",
+    "pictures/调试笔记/linux工具_1.PNG.crdownload",
+    "pictures/项目笔记",
+    "pictures/新建文件夹",
+    "pictures/调试笔记",
+    "pictures/deepLearning",
+    "().md",
+    "docs/Misra.md",
+    "docs/gdb.md",
+    "docs/线性代数.md",
+    "docs/调试手册.md",
+    "Linux shm.md",
+    "C++汇编.md",
+    "2024-01-08.md"
+  ]
+}
