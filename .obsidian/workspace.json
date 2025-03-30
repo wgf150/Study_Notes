@@ -8,105 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "16e3eebb40a8b1e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/简历分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "简历分析"
-            }
-          },
-          {
             "id": "60615377c28f3ee7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/项目笔记.md",
-                "mode": "source",
-                "source": false
+                "file": "pictures/项目笔记/J6模型转换_5.png"
               },
-              "icon": "lucide-file",
-              "title": "项目笔记"
-            }
-          },
-          {
-            "id": "eb67e11daeb3b8d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/python.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "python"
-            }
-          },
-          {
-            "id": "022d583157dbe3e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Leetcode.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Leetcode"
-            }
-          },
-          {
-            "id": "4161dcb7536ccd06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/C++.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "C++"
-            }
-          },
-          {
-            "id": "1619e8dfa8a8a3b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/面试准备.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "面试准备"
-            }
-          },
-          {
-            "id": "00d608059572cebb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/调试笔记.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "调试笔记"
+              "icon": "lucide-image",
+              "title": "J6模型转换_5"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/C++.md",
+                "file": "pictures/项目笔记/J6模型转换_5.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C++ 的大纲"
+              "title": "J6模型转换_5 的大纲"
             }
           }
         ],
@@ -253,10 +166,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4161dcb7536ccd06",
+  "active": "60615377c28f3ee7",
   "lastOpenFiles": [
-    "docs/简历分析.md",
     "docs/C++.md",
+    "doc/项目笔记.md",
+    "doc/面试准备.md",
+    "doc/调试笔记.md",
+    "doc/简历分析.md",
+    "doc/神经网络和深度学习.md",
+    "doc/知识提纲.md",
+    "doc/Misra.md",
+    "doc/linuxptp - ptp4l.md",
+    "doc/python.md",
+    "doc/gptp笔记.md",
+    "doc/Leetcode.md",
+    "doc/C++.md",
+    "doc",
+    "docs/简历分析.md",
     "Pasted image 20250327155109.png",
     "Pasted image 20250327155050.png",
     "docs/项目笔记.md",
@@ -287,15 +213,6 @@
     "pictures/调试笔记/linux工具_1.PNG.crdownload",
     "pictures/项目笔记",
     "pictures/新建文件夹",
-    "pictures/调试笔记",
-    "pictures/deepLearning",
-    "().md",
-    "docs/Misra.md",
-    "docs/gdb.md",
-    "docs/线性代数.md",
-    "docs/调试手册.md",
-    "Linux shm.md",
-    "C++汇编.md",
-    "2024-01-08.md"
+    "pictures/调试笔记"
   ]
 }
