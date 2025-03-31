@@ -3267,6 +3267,29 @@ int main() {
 
 #### 完美转发：
 在函数模板中，将参数原封不动的传递给其他函数，保留参数的左值和右值属性
+使用场景，通常都伴随着万能引用（引用折叠）而万能引用通常伴随着函数模板：
+* 类型推导中，如auto、template中，&&才为万能引用，否则只是普通的右值引用
+* 如果函数内部使用了完美转发，需注意覆盖所有的参数场景：
+	* 如下，定义了process 的 int & 和 int && 版本
+	* 也可以直接定义 template \<typename T\>void process(T &&x)，会覆盖所有左值右值版本 
+
+```cpp
+void process(int &&x){
+    cout << "R process" << endl;
+}
+
+void process(int &x){
+    cout << "L process" << endl;
+}
+
+template <typename T>
+void wrapper(T&& arg) {  // 通用引用(Universal Reference)
+    process(std::forward<T>(arg));  // 完美转发
+}
+```
+
+
+
 示例：
 ```cpp
 #include <iostream>
@@ -3300,7 +3323,45 @@ int main() {
 * std::forward 用于在函数模板中保留参数的左值或右值属性
 * 保留右值熟悉，可以触发移动语义，减少拷贝，提高性能
 
+#### lock_guard
+C++11 提供自释放的锁机制，例：
+```cpp
+//普通用法
+std::mutex mtx;
+mtx.lock();
+mtx.unlock();
 
+//C++11 用法
+std::mutex mtx;
+std::lock_guard<std::mutex> lock(mtx);
+```
+* RAII机制，lock_guard构造时自动加锁，析构是自动解锁
+* 即使发生异常，锁也可能自动释放
+
+#### atomic
+C++ 中的 std::atomic 是用于多线程编程的关键工具，它提供了一种线程安全的方式操作共享数据，无需显式加锁（如 std::mutex）
+
+简单用法：
+```cpp
+std::atomic<int> counter{0};
+
+int ret = counter.load();  // 写
+counter.store(0);          // 读
+counter.fetch_add(1, std::memory_order_relaxed);   // 加法
+```
+
+std::memory_order是C++ 原子操作中用于控制内存访问顺序的枚举类型，它允许开发者在性能与正确性之间做出精细权衡
+
+```cpp
+typedef enum memory_order {
+    memory_order_relaxed,
+    memory_order_consume,
+    memory_order_acquire,
+    memory_order_release,
+    memory_order_acq_rel,
+    memory_order_seq_cst
+} memory_order;
+```
 
 
 
