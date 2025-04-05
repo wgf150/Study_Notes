@@ -3214,6 +3214,75 @@ class 类名 {
 
 
 ### C++ STL
+#### 常用方法：
+##### std::find()：
+- `first` - 搜索范围的起始迭代器
+- `last` - 搜索范围的结束迭代器
+- `val` - 要查找的值
+- 返回值 - 指向第一个匹配元素的迭代器，如果未找到则返回`last`
+```cpp
+#include <algorithm>
+template <class InputIterator, class T>
+InputIterator find(InputIterator first, InputIterator last, const T& val);
+```
+
+##### string::find()：
+用于查找字符串中 子字符(串)第一次出现的的位置
+* 返回值 - 第一个匹配元素的位置(size_t 类型)，如果未找到则返回string::npos
+* 注：npos 不能表示字符串末尾，可能是-1之类的非法值
+存在多种变体：
+```cpp
+#include <string>
+std::string str;
+
+//查找字符
+size_t pos = str.find('W');
+//查找字符串
+size_t pos = str.find("World");
+//从5开始查找
+size_t pos = str.find('o', 5);
+//查找字符集中的任意字符
+size_t pos = str.find_first_of("aeiou");
+//反向查找
+size_t pos = str.rfind('l');
+```
+
+##### string::substr()
+用于从string中提取子串
+- `pos` - 子字符串的起始位置（默认为0，即字符串开头）
+- `len` - 要提取的字符数（默认为 `npos`，表示直到字符串末尾）
+- 返回值 - 包含提取子字符串的新字符串对象
+```cpp
+string substr(size_t pos = 0, size_t len = npos) const;
+```
+
+#### 迭代器失效
+
+##### vector迭代器失效
+vector的底层实现：堆上的连续数组
+失效场景：
+* 插入元素（可能失效）
+	* 尾插（push_back()/emplace_back()）:
+		- 如果导致**容量重新分配**，则**所有迭代器、指针和引用都会失效**        
+	    - 如果没有重新分配，只有**尾后迭代器(end())失效**    
+	* 中间插入（insert()/emplace()）：
+	    - 如果导致容量重新分配，**所有迭代器、指针和引用都会失效**    
+	    - 如果没有重新分配，**插入位置及之后的所有迭代器都会失效**
+* 删除元素（导致部分失效）
+	- 尾删（pop_back()）：
+	    - **尾迭代器和被删除元素的迭代器失效**    
+	    - 其他迭代器保持有效    
+	- 中间删除（erase()）：
+	    - **被删除元素及其之后的所有迭代器失效**
+	    - 删除位置之前的迭代器保持有效
+	- 清空clear()：
+	    - **所有迭代器失效**
+- 改变容量（必然失效）
+	- reserve()：
+		- 如果新容量大于当前容量，**所有迭代器、指针和引用都会失效**
+	- resize()：
+		- 如果导致容量增加，**所有迭代器、指针和引用都会失效**
+		- 仅减少size不影响容量时，只有被删除元素的迭代器失效
 
 
 ### C++11 新特性
@@ -3323,7 +3392,8 @@ int main() {
 * std::forward 用于在函数模板中保留参数的左值或右值属性
 * 保留右值熟悉，可以触发移动语义，减少拷贝，提高性能
 
-#### lock_guard
+#### 锁
+使用 std::mutex 实现
 C++11 提供自释放的锁机制，例：
 ```cpp
 //普通用法
@@ -3337,6 +3407,35 @@ std::lock_guard<std::mutex> lock(mtx);
 ```
 * RAII机制，lock_guard构造时自动加锁，析构是自动解锁
 * 即使发生异常，锁也可能自动释放
+
+C++14 提供了更便利的shared_mutex，在排他锁的基础上还提供了共享锁机制
+```cpp
+#include <shared_mutex>
+std::shared_mutex sh_mtx;
+
+sh_mtx.lock();      // 获取排他锁（阻塞）
+sh_mtx.try_lock();  // 尝试获取排他锁（非阻塞）
+sh_mtx.unlock();    // 释放排他锁
+
+sh_mtx.lock_shared();      // 获取共享锁（阻塞）
+sh_mtx.try_lock_shared();  // 尝试获取共享锁（非阻塞）
+sh_mtx.unlock_shared();    // 释放共享锁
+
+// RAII (对作用域有效，离开作用域自动释放)
+std::unique_lock<std::shared_mutex> lock(sh_mtx);
+std::shared_lock<std::shared_mutex> lock(sh_mtx);
+```
+* 注意，针对排它锁和共享锁的 lock和unlock 需要成对使用，否则易出现未定义的行为；推荐使用RAII包装类
+
+#### RAII机制
+资源获取即初始化，核心原则
+* 资源获取与对象构造绑定，即创建RAII对象时，构造函数会自动获取所需资源
+* 资源释放与对象析构绑定，即离开对象作用域时，析构函数会自动释放资源
+举例：
+* 智能指针
+* fstream
+* 锁的包装类
+* 容器
 
 #### atomic
 C++ 中的 std::atomic 是用于多线程编程的关键工具，它提供了一种线程安全的方式操作共享数据，无需显式加锁（如 std::mutex）
@@ -3362,6 +3461,7 @@ typedef enum memory_order {
     memory_order_seq_cst
 } memory_order;
 ```
+
 
 
 

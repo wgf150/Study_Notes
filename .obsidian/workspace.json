@@ -62,8 +62,23 @@
               "icon": "lucide-file",
               "title": "简历分析"
             }
+          },
+          {
+            "id": "854716b3ef56812f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "doc/Leetcode.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Leetcode"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -184,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "doc/C++.md",
+                "file": "doc/Leetcode.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C++ 的大纲"
+              "title": "Leetcode 的大纲"
             }
           }
         ],
@@ -210,7 +225,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8ab121e73d20df56",
+  "active": "854716b3ef56812f",
   "lastOpenFiles": [
     "doc/简历分析.md",
     "doc/面试准备.md",
